@@ -1,0 +1,35 @@
+.gallery-count {
+  font-size: 0.82rem;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.gallery-grid {
+  columns: 4 240px;
+  column-gap: 1.25rem;
+}
+
+.gallery-grid > * {
+  break-inside: avoid;
+  margin-bottom: 1.25rem;
+}
+
+@media (max-width: 768px) {
+  .gallery-grid {
+    columns: 2 160px;
+    column-gap: 0.85rem;
+  }
+
+  .gallery-grid > * {
+    margin-bottom: 0.85rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .gallery-grid {
+    columns: 1;
+  }
+}
